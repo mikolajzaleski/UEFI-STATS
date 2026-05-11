@@ -41,16 +41,16 @@ jobs:
         source edksetup.sh
         
         # Build the application using PACKAGES_PATH
-        build -p MyEfiShellPkg/MyEfiShellPkg.dsc -a X64 -t GCC5 -b DEBUG
+        build -p MyEfiShellPkg/MyEfiShellPkg.dsc -a X64 -t GCC -b DEBUG
 
     - name: Run Unit Tests
       run: |
-        echo "Unit tests compiled successfully at edk2/Build/MyEfiShellPkg/DEBUG_GCC5/X64/MyShellAppTest.efi"
+        echo "Unit tests compiled successfully at edk2/Build/MyEfiShellPkg/DEBUG_GCC/X64/MyShellAppTest.efi"
         
     - name: Upload Build Artifacts
       uses: actions/upload-artifact@v4
       with:
         name: UEFI-Diagnostic-Tool
         path: |
-          edk2/Build/MyEfiShellPkg/DEBUG_GCC5/X64/MyShellApp.efi
-          edk2/Build/MyEfiShellPkg/DEBUG_GCC5/X64/MyShellAppTest.efi
+          edk2/Build/MyEfiShellPkg/DEBUG_GCC/X64/MyShellApp.efi
+          edk2/Build/MyEfiShellPkg/DEBUG_GCC/X64/MyShellAppTest.efi
