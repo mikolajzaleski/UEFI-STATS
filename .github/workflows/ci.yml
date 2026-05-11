@@ -19,7 +19,7 @@ jobs:
     - name: Install Dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y build-essential uuid-dev iasl git gcc-11 g++-11
+        sudo apt-get install -y build-essential uuid-dev iasl git gcc-11 g++-11 nasm python3-venv
 
     - name: Checkout EDK2 Repository
       uses: actions/checkout@v4
