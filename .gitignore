@@ -1,0 +1,4 @@
+edk2/
+Build/
+qemu_fat_dir/
+*.log

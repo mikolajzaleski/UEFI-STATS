@@ -1,0 +1,28 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = MyShellApp
+  FILE_GUID                      = 11223344-5566-7788-99aa-bbccddeeff00
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = ShellCEntryLib
+
+[Sources]
+  MyShellApp.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[Protocols]
+  gEfiSmbiosProtocolGuid
+  gEfiPciIoProtocolGuid
+
+[LibraryClasses]
+  UefiLib
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  ShellCEntryLib
+  ShellLib
+
+[Guids]
+  gEfiGlobalVariableGuid

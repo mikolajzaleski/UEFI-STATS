@@ -1,0 +1,21 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = MyShellAppTest
+  FILE_GUID                      = F6DB5A83-F12D-4B72-911E-F709E385D3B8
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  MyShellAppTest.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  BaseLib
+  DebugLib
+  UnitTestLib
+  PrintLib
