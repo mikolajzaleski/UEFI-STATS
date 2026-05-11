@@ -1,7 +1,7 @@
 [Defines]
   INF_VERSION                    = 0x00010005
   BASE_NAME                      = MyShellApp
-  FILE_GUID                      = 11223344-5566-7788-99aa-bbccddeeff00
+  FILE_GUID                      = e9fc4a26-dbc1-47fb-8d12-49a179762dc9
   MODULE_TYPE                    = UEFI_APPLICATION
   VERSION_STRING                 = 0.1
   ENTRY_POINT                    = ShellCEntryLib

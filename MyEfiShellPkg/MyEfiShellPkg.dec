@@ -1,7 +1,7 @@
 [Defines]
   DEC_SPECIFICATION              = 0x00010005
   PACKAGE_NAME                   = MyEfiShellPkg
-  PACKAGE_GUID                   = 12345678-1234-5678-9abc-def012345678
+  PACKAGE_GUID                   = 1038f770-2f4e-4875-bf0a-1fdb801acd80
   PACKAGE_VERSION                = 0.1
 
 [Includes]

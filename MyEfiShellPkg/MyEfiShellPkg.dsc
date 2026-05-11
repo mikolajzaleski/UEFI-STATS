@@ -1,6 +1,6 @@
 [Defines]
   PLATFORM_NAME                  = MyEfiShellPkg
-  PLATFORM_GUID                  = 87654321-4321-8765-cba9-fed098765432
+  PLATFORM_GUID                  = 77ab0215-8973-4192-b97d-c42e0c548947
   PLATFORM_VERSION               = 0.1
   DSC_SPECIFICATION              = 0x00010005
   OUTPUT_DIRECTORY               = Build/MyEfiShellPkg
