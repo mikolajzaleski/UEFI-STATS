@@ -48,7 +48,7 @@ jobs:
         echo "Unit tests compiled successfully at edk2/Build/MyEfiShellPkg/DEBUG_GCC/X64/MyShellAppTest.efi"
         
     - name: Upload Build Artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: UEFI-Diagnostic-Tool
         path: |
